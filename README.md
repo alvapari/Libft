@@ -11,7 +11,7 @@ Este proyecto resulta fundamental a lo largo de toda la estancia del estudiante 
 
 
 **Conceptos clave del proyecto:**
-- Trabajo en strings caracter a caracter (y la importancia de pensar siempre en cerrar la string con '\0')
+- Trabajo en strings carácter a carácter (y la importancia de pensar siempre en cerrar la string con '\0')
 - **Alocación y liberación de memoria**
 - **File Descriptors**
 - **Listas enlazadas**
