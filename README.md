@@ -1,18 +1,18 @@
 ## Libft
 
-*Libft* es el primer proyecto de la escuela de programación 42 School. 
+*Libft* es el <b>primer proyecto</b> de la escuela de programación 42 School. 
+
+
+El proyecto consiste en realizar una librería en C implementando un total de 43 funciones que van aumentando su complejidad desde lo básico (ft_strlen) hasta realizar funciones con listas enlazadas (ft_lstmap).
+
+Este proyecto resulta fundamental a lo largo de toda la estancia del estudiante en 42, pues se irá utilizando en todos los proyectos posteriores. Además, <b>sirve como base para algunos conceptos clave.</b> 
+
 <br> 
 
-El proyecto consiste en realizar una librería implementando un total de 43 funciones que van aumentando su complejidad desde lo básico (ft_strlen) hasta realizar funciones con listas enlazadas (ft_lstmap).
-
-<br> 
-Este proyecto resulta fundamental a lo largo de toda la estancia del estudiante en 42, pues esta librería se irá utilizando en todos los proyectos posteriores. Además, sirve como base para algunos de conceptos
-<br> 
-<br> 
 
 **Conceptos clave del proyecto:**
 - Trabajo en strings caracter a caracter (y la importancia de pensar siempre en cerrar la string con '\0')
-- **Alocación de memoria** (¡y liberación!)
+- **Alocación y liberación de memoria**
 - **File Descriptors**
 - **Listas enlazadas**
 
