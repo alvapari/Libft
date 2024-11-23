@@ -15,6 +15,7 @@ Este proyecto resulta fundamental a lo largo de toda la estancia del estudiante 
 - **Alocación y liberación de memoria**
 - **File Descriptors**
 - **Listas enlazadas**
+- **Makefile:** compilación (con flags -Well -Wextra -Werror, archivos .h) 
 
 <br> 
 
