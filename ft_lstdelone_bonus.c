@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 16:13:08 by alvapari          #+#    #+#             */
-/*   Updated: 2023/10/03 17:31:02 by alvapari         ###   ########.fr       */
+/*   Created: 2024/02/15 18:17:37 by alvapari          #+#    #+#             */
+/*   Updated: 2024/02/18 20:32:11 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int x)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	return ((x >= 48 && x <= 57) || (x >= 65 && x <= 90)
-		|| (x >= 97 && x <= 122));
+	if (lst == NULL)
+		return ;
+	del(lst->content);
+	free(lst);
 }
-
-/*
-int	main(void)
-{
-	printf("%i", isalnum(122));
-	printf("%i", ft_isalnum(122));
-	return (0);
-} */

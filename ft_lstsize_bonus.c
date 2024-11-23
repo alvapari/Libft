@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 16:13:08 by alvapari          #+#    #+#             */
-/*   Updated: 2023/10/03 17:31:02 by alvapari         ###   ########.fr       */
+/*   Created: 2024/02/15 18:18:36 by alvapari          #+#    #+#             */
+/*   Updated: 2024/02/18 20:43:18 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int x)
+int	ft_lstsize(t_list *lst)
 {
-	return ((x >= 48 && x <= 57) || (x >= 65 && x <= 90)
-		|| (x >= 97 && x <= 122));
-}
+	int		count;
+	t_list	*aux;
 
-/*
-int	main(void)
-{
-	printf("%i", isalnum(122));
-	printf("%i", ft_isalnum(122));
-	return (0);
-} */
+	count = 0;
+	aux = lst;
+	while (aux != NULL)
+	{
+		aux = aux->next;
+		count++;
+	}
+	return (count);
+}

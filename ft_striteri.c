@@ -1,31 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/21 19:21:39 by alvapari          #+#    #+#             */
-/*   Updated: 2023/08/31 20:54:15 by alvapari         ###   ########.fr       */
+/*   Created: 2023/09/08 18:01:29 by alvapari          #+#    #+#             */
+/*   Updated: 2023/09/11 12:25:16 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlen(const char *str)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	count;
+	unsigned int	slen;
 
+	slen = 0;
 	count = 0;
-	while (str[count] != '\0')
+	while (s[slen] != '\0')
 	{
+		slen++;
+	}
+	while (count < slen)
+	{
+		f(count, &s[count]);
 		count++;
 	}
-	return (count);
 }
 /*
+void f(unsigned int i, char *c)
+{
+	if (i < 10)
+		*c = ft_toupper(&c);
+}
+
 int	main(void)
 {
-	char	paco[] = "123456789";
-	printf("%i", ft_strlen(&paco[5]));
+	char	c[] = "holaaaaaaa";
+	ft_striteri(c, &f);
+	printf("%s", c);
+	return (0);
 }*/

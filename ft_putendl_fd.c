@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 16:13:08 by alvapari          #+#    #+#             */
-/*   Updated: 2023/10/03 17:31:02 by alvapari         ###   ########.fr       */
+/*   Created: 2023/09/12 15:43:34 by alvapari          #+#    #+#             */
+/*   Updated: 2023/10/03 17:15:17 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int x)
+void	ft_putendl_fd(char *s, int fd)
 {
-	return ((x >= 48 && x <= 57) || (x >= 65 && x <= 90)
-		|| (x >= 97 && x <= 122));
-}
+	int	count;
 
-/*
-int	main(void)
-{
-	printf("%i", isalnum(122));
-	printf("%i", ft_isalnum(122));
-	return (0);
-} */
+	count = 0;
+	while (s[count] != '\0')
+	{
+		write(fd, &s[count], 1);
+		count++;
+	}
+	write(fd, "\n", 1);
+}

@@ -6,17 +6,11 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 00:18:24 by alvapari          #+#    #+#             */
-/*   Updated: 2023/06/25 02:23:39 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:52:54 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
-*/
 #include "libft.h"
-#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

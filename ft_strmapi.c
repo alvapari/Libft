@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/21 19:21:39 by alvapari          #+#    #+#             */
-/*   Updated: 2023/08/31 20:54:15 by alvapari         ###   ########.fr       */
+/*   Created: 2023/09/01 12:55:05 by alvapari          #+#    #+#             */
+/*   Updated: 2023/09/08 13:55:28 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlen(const char *str)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	char			*newstr;
 	unsigned int	count;
 
 	count = 0;
-	while (str[count] != '\0')
+	newstr = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (newstr == NULL)
+		return (NULL);
+	while (count < ft_strlen(s))
 	{
+		newstr[count] = f(count, s[count]);
 		count++;
 	}
-	return (count);
+	newstr[count] = s[count];
+	return (newstr);
 }
 /*
+char	f(unsigned int i, char c)
+{
+	i = 32;
+	return (c - i);
+}
+
 int	main(void)
 {
-	char	paco[] = "123456789";
-	printf("%i", ft_strlen(&paco[5]));
-}*/
+	printf("%s", ft_strmapi("holae", &f));
+}
+*/

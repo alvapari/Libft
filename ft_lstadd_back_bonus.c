@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 16:13:08 by alvapari          #+#    #+#             */
-/*   Updated: 2023/10/03 17:31:02 by alvapari         ###   ########.fr       */
+/*   Created: 2024/02/15 18:16:37 by alvapari          #+#    #+#             */
+/*   Updated: 2024/02/15 21:48:09 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int x)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	return ((x >= 48 && x <= 57) || (x >= 65 && x <= 90)
-		|| (x >= 97 && x <= 122));
-}
+	t_list	*aux;
 
-/*
-int	main(void)
-{
-	printf("%i", isalnum(122));
-	printf("%i", ft_isalnum(122));
-	return (0);
-} */
+	if (!*lst)
+		*lst = new;
+	else
+	{
+		aux = *lst;
+		while (aux->next != NULL)
+			aux = aux->next;
+		aux->next = new;
+	}
+}

@@ -6,7 +6,7 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/28 17:46:00 by alvapari          #+#    #+#             */
-/*   Updated: 2023/08/25 01:27:35 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 18:03:39 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (result);
 }
 
+/*
 int main (void)
 {
-	char pr[]	 = "jhhhh";
-	const char pr2[]	 = "STGGGGR";
-	printf("%lu\n", ft_strlcat(pr, pr2, 30));
+	char	*pr;
+	const char	*pr2;
+
+	pr = "jhhhh";
+	pr2	 = "STGGGGR";
+	printf("%lu\n", ft_strlcat(pr, pr2, 5));
 	printf("%s\n", pr);
-}
+}*/

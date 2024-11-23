@@ -6,16 +6,12 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 10:25:38 by alvapari          #+#    #+#             */
-/*   Updated: 2023/04/27 21:41:21 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:50:12 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-*/
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
 	int	count;

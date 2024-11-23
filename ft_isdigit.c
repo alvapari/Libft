@@ -6,15 +6,11 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 19:06:27 by alvapari          #+#    #+#             */
-/*   Updated: 2023/04/21 16:29:18 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:31:40 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <unistd.h>
-#include <stdio.h>
-#include <ctype.h>
-*/
+#include "libft.h"
 
 int	ft_isdigit(int n)
 {

@@ -6,15 +6,11 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 11:24:43 by alvapari          #+#    #+#             */
-/*   Updated: 2023/08/14 12:17:06 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:51:44 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* 
-#include <unistd.h>
-#include <stdio.h>
-#include <ctype.h> 
-*/
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,16 +6,10 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 10:23:48 by alvapari          #+#    #+#             */
-/*   Updated: 2023/05/31 11:54:24 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 18:08:43 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <ctype.h>
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-*/
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
@@ -34,11 +28,11 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (ptr);
 }
+
 /*
 int	main(void)
 {
-	char hola [] = "Holafffffffffffffffffffffffffgsdfsdf";
-	printf("%s\n", ft_memset(hola, 65, 15));
-	printf("%s", memset(hola, 65, 15));
-
+	char hola [] = "Holayadios";
+	printf("%s\n", ft_memset(hola, 65, 40));
+	printf("%s", memset(hola, 65, 40));
 }*/

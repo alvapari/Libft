@@ -6,9 +6,11 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 16:51:20 by alvapari          #+#    #+#             */
-/*   Updated: 2023/04/23 11:28:31 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:31:25 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int x)
 {

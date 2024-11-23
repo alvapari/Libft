@@ -6,7 +6,7 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/04 16:41:14 by alvapari          #+#    #+#             */
-/*   Updated: 2023/06/05 10:42:41 by alvapari         ###   ########.fr       */
+/*   Updated: 2024/02/07 18:27:12 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	else
 		return (ptr1[count] - ptr2[count]);
 }
+
 /*
 int	main(void)
 {

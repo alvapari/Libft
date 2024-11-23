@@ -6,16 +6,10 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:54:04 by alvapari          #+#    #+#             */
-/*   Updated: 2023/04/28 12:40:48 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:52:21 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <unistd.h>
-#include <ctype.h>
-#include <string.h>
-*/
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

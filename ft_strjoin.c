@@ -1,41 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/27 17:43:16 by alvapari          #+#    #+#             */
-/*   Updated: 2023/09/21 20:50:38 by alvapari         ###   ########.fr       */
+/*   Created: 2023/08/30 20:40:41 by alvapari          #+#    #+#             */
+/*   Updated: 2023/10/03 18:55:03 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*sstr;
+	char	*nstr;
 	size_t	count;
+	size_t	count2;
 
 	count = 0;
-	if (start >= ft_strlen(s))
-		return (ft_calloc(1, 1));
-	if (len > ft_strlen(&s[start]))
-	{
-		len = ft_strlen(&s[start]);
-	}
-	sstr = malloc(len + 1);
-	if (sstr == NULL)
+	count2 = 0;
+	nstr = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (nstr == NULL)
 		return (NULL);
-	while (count < len && s[start] != '\0')
-		sstr[count++] = s[start++];
-	sstr[count] = '\0';
-	return (sstr);
+	while (s1[count])
+		nstr[count2++] = s1[count++];
+	count = 0;
+	while (s2[count] != '\0')
+		nstr[count2++] = s2[count++];
+	nstr[count2++] = '\0';
+	return (nstr);
 }
+
 /*
 int	main(void)
 {
-	char	*ey;
-
-	printf("\n qué devuelve%s", ft_substr("hola", 34, 5));
+	char    *s1 = "ABCD'\0EFGH";
+	char    *s2 = "ey, QUÉ, ey";
+	printf ("%s", ft_strjoin (s1, s2));
+    printf ("\n%c", s1[6]);
 }*/

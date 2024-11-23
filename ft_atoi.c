@@ -6,7 +6,7 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/29 15:39:28 by alvapari          #+#    #+#             */
-/*   Updated: 2023/07/21 13:20:34 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:29:06 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	ft_atoi(const char *str)
 	}
 	return ((result) * (sign));
 }
+
 /*
 int main(void)
 {

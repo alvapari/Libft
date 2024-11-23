@@ -6,7 +6,7 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 13:13:07 by alvapari          #+#    #+#             */
-/*   Updated: 2023/06/06 20:01:10 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:48:40 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		return ((void *)&str[count]);
 	}
 }
+
 /*
 int main(void)
 {

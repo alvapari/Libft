@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/20 16:13:08 by alvapari          #+#    #+#             */
-/*   Updated: 2023/10/03 17:31:02 by alvapari         ###   ########.fr       */
+/*   Created: 2023/09/11 15:02:47 by alvapari          #+#    #+#             */
+/*   Updated: 2023/10/03 17:49:03 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int x)
+void	ft_putchar_fd(char c, int fd)
 {
-	return ((x >= 48 && x <= 57) || (x >= 65 && x <= 90)
-		|| (x >= 97 && x <= 122));
+	write(fd, &c, 1);
 }
 
 /*
 int	main(void)
 {
-	printf("%i", isalnum(122));
-	printf("%i", ft_isalnum(122));
+	int fd = open("newfile.txt", O_RDWR | O_CREAT | O_TRUNC);
+	if (fd < 0)
+	{
+		return (1);
+	}
+	ft_putchar_fd('H', fd);
+	ft_putchar_fd('e', fd);
+	ft_putchar_fd('y', fd);
+	ft_putchar_fd('\n', fd);
+	close(fd);
 	return (0);
-} */
+}*/

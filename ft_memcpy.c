@@ -6,13 +6,10 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 19:46:06 by alvapari          #+#    #+#             */
-/*   Updated: 2023/07/26 21:56:19 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:57:54 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <string.h>
-#include <stdio.h>*/
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
@@ -35,6 +32,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
 /*
 int	main(void)
 {

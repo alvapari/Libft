@@ -6,7 +6,7 @@
 /*   By: alvapari <alvapari@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 20:10:06 by alvapari          #+#    #+#             */
-/*   Updated: 2023/08/14 11:21:39 by alvapari         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:48:55 by alvapari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
 /*
 int	main(void)
 {
