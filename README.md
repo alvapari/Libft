@@ -21,10 +21,10 @@ Este proyecto resulta fundamental a lo largo de toda la estancia del estudiante 
 
 ### Documentación:
 Si quieres ver la **documentación completa** del proyecto, puedes ver estos apuntes: <br> 
-https://42guideprojects.notion.site/Libft-79e46c53c7cb4aabb5f8238e2e19c398
+[Documentación](https://42guideprojects.notion.site/Libft-79e46c53c7cb4aabb5f8238e2e19c398)
 
 <br>
 
 ### Requerimientos:
 Si quieres leer los requerimientos del proyecto, puedes encontrarlos aquí: <br> 
-https://github.com/user-attachments/files/17880368/es.subject.pdf
+[Requerimientos](https://github.com/user-attachments/files/17880368/es.subject.pdf)
